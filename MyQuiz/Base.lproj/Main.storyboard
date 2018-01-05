@@ -18,17 +18,122 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="T0W-33-3yN">
-                                <rect key="frame" x="181" y="282" width="150" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ce-rF-3xU">
+                                <rect key="frame" x="146" y="368" width="77" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GCL-W2-vAo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyQuiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyx-0q-2t0">
+                                <rect key="frame" x="112" y="144" width="150" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="jMS-ca-gVg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2ce-rF-3xU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="6tb-cB-9XV"/>
+                            <constraint firstItem="Iyx-0q-2t0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yb9-HD-Fza"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2ce-rF-3xU" secondAttribute="bottom" constant="269" id="ikZ-id-cpd"/>
+                            <constraint firstItem="Iyx-0q-2t0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="124" id="jY6-qA-QiG"/>
+                            <constraint firstItem="Iyx-0q-2t0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="pjd-tt-hUU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2ce-rF-3xU" secondAttribute="trailing" constant="152" id="tMd-Us-aDw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LvU-xL-1dZ">
+            <objects>
+                <viewController id="7PR-5p-uut" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AW9-Xg-tLj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3p-Bf-pKF">
+                                <rect key="frame" x="52" y="50" width="20.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="こーへー先生は、どんな時にニヤッと笑うでしょうか？" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RT0-gP-3j5">
+                                <rect key="frame" x="46" y="102.5" width="268" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="c6q-gE-5XL"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q5K-8K-S2Z">
+                                <rect key="frame" x="31" y="230.5" width="306" height="380.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhL-pF-TjF">
+                                        <rect key="frame" x="0.0" y="0.0" width="306" height="87.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="動物を触ったとき">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwH-ZG-ehh">
+                                        <rect key="frame" x="0.0" y="97.5" width="306" height="88"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="メロンを食べたとき">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zen-Mq-O1q">
+                                        <rect key="frame" x="0.0" y="195.5" width="306" height="87.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="あみの微笑ましい行動をみたとき">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKm-xw-aBv">
+                                        <rect key="frame" x="0.0" y="293" width="306" height="87.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="人が失敗したとき">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aFk-ch-c4t" firstAttribute="trailing" secondItem="Q5K-8K-S2Z" secondAttribute="trailing" constant="38" id="2w7-de-EUG"/>
+                            <constraint firstItem="Q5K-8K-S2Z" firstAttribute="top" secondItem="RT0-gP-3j5" secondAttribute="bottom" constant="8" symbolic="YES" id="Dzi-An-sCw"/>
+                            <constraint firstItem="Q5K-8K-S2Z" firstAttribute="leading" secondItem="aFk-ch-c4t" secondAttribute="leading" constant="31" id="GK8-2g-6cW"/>
+                            <constraint firstItem="RT0-gP-3j5" firstAttribute="leading" secondItem="aFk-ch-c4t" secondAttribute="leading" constant="46" id="ZEq-A1-h3a"/>
+                            <constraint firstItem="i3p-Bf-pKF" firstAttribute="top" secondItem="aFk-ch-c4t" secondAttribute="top" constant="30" id="a0i-jp-2sl"/>
+                            <constraint firstItem="i3p-Bf-pKF" firstAttribute="leading" secondItem="aFk-ch-c4t" secondAttribute="leading" constant="52" id="bCE-T9-a5q"/>
+                            <constraint firstItem="aFk-ch-c4t" firstAttribute="bottom" secondItem="Q5K-8K-S2Z" secondAttribute="bottom" constant="56" id="eQV-MY-jBf"/>
+                            <constraint firstItem="aFk-ch-c4t" firstAttribute="trailing" secondItem="RT0-gP-3j5" secondAttribute="trailing" constant="61" id="igZ-Pu-Q4d"/>
+                            <constraint firstItem="RT0-gP-3j5" firstAttribute="top" secondItem="i3p-Bf-pKF" secondAttribute="bottom" constant="32" id="nTJ-ic-2fE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aFk-ch-c4t"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euk-7I-Dsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855.20000000000005" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
