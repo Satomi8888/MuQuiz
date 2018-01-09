@@ -145,6 +145,63 @@
             </objects>
             <point key="canvasLocation" x="855.20000000000005" y="132.68365817091455"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Ob9-Pz-jmC">
+            <objects>
+                <viewController id="b5V-xU-lLA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yfc-MB-bRT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUw-g6-yIB">
+                                <rect key="frame" x="82" y="507" width="229" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WTD-kW-avL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="タイトルへ戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gkU-3G-JBM">
+                                <rect key="frame" x="94" y="184" width="161" height="204"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正解率は" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCx-tU-LtU">
+                                        <rect key="frame" x="0.0" y="0.0" width="161" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100％" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRj-oq-xbq">
+                                        <rect key="frame" x="0.0" y="78" width="161" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="でした" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6Q-dz-SJS">
+                                        <rect key="frame" x="0.0" y="156" width="161" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="lSJ-ap-j6j" firstAttribute="bottom" secondItem="IUw-g6-yIB" secondAttribute="bottom" constant="130" id="465-O1-HWo"/>
+                            <constraint firstItem="gkU-3G-JBM" firstAttribute="leading" secondItem="lSJ-ap-j6j" secondAttribute="leading" constant="94" id="K1m-A1-WVD"/>
+                            <constraint firstItem="gkU-3G-JBM" firstAttribute="top" secondItem="lSJ-ap-j6j" secondAttribute="top" constant="164" id="LyH-mi-gLI"/>
+                            <constraint firstItem="IUw-g6-yIB" firstAttribute="leading" secondItem="lSJ-ap-j6j" secondAttribute="leading" constant="82" id="Owh-t1-380"/>
+                            <constraint firstItem="lSJ-ap-j6j" firstAttribute="trailing" secondItem="IUw-g6-yIB" secondAttribute="trailing" constant="64" id="S8X-Sc-qzs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lSJ-ap-j6j"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wOP-iU-RTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="132.68365817091455"/>
+        </scene>
     </scenes>
     <resources>
         <image name="correct" width="202" height="202"/>
