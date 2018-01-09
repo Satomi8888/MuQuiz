@@ -28,6 +28,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="7PR-5p-uut" kind="presentation" id="qXp-E2-6bo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyQuiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyx-0q-2t0">
                                 <rect key="frame" x="112" y="144" width="150" height="80"/>
@@ -58,7 +61,7 @@
         <!--View Controller-->
         <scene sceneID="LvU-xL-1dZ">
             <objects>
-                <viewController id="7PR-5p-uut" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Question" id="7PR-5p-uut" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AW9-Xg-tLj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,7 +151,7 @@
         <!--View Controller-->
         <scene sceneID="Ob9-Pz-jmC">
             <objects>
-                <viewController id="b5V-xU-lLA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Result" id="b5V-xU-lLA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yfc-MB-bRT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
