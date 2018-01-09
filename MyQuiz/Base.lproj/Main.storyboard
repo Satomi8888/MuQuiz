@@ -69,7 +69,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="こーへー先生は、どんな時にニヤッと笑うでしょうか？" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RT0-gP-3j5">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="私の好きな果物は何でしょう？" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RT0-gP-3j5">
                                 <rect key="frame" x="46" y="102.5" width="268" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="c6q-gE-5XL"/>
@@ -85,7 +85,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="306" height="87.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="動物を触ったとき">
+                                        <state key="normal" title="パイナップル">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -93,7 +93,7 @@
                                         <rect key="frame" x="0.0" y="97.5" width="306" height="88"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="メロンを食べたとき">
+                                        <state key="normal" title="いちご">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -101,7 +101,7 @@
                                         <rect key="frame" x="0.0" y="195.5" width="306" height="87.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="あみの微笑ましい行動をみたとき">
+                                        <state key="normal" title="もも">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -109,24 +109,34 @@
                                         <rect key="frame" x="0.0" y="293" width="306" height="87.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="人が失敗したとき">
+                                        <state key="normal" title="オレンジ">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="Myx-AD-m3S">
+                                <rect key="frame" x="86" y="232" width="202" height="202"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incorrect" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-xN-dzP">
+                                <rect key="frame" x="87" y="233" width="201" height="201"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aFk-ch-c4t" firstAttribute="trailing" secondItem="Q5K-8K-S2Z" secondAttribute="trailing" constant="38" id="2w7-de-EUG"/>
                             <constraint firstItem="Q5K-8K-S2Z" firstAttribute="top" secondItem="RT0-gP-3j5" secondAttribute="bottom" constant="8" symbolic="YES" id="Dzi-An-sCw"/>
                             <constraint firstItem="Q5K-8K-S2Z" firstAttribute="leading" secondItem="aFk-ch-c4t" secondAttribute="leading" constant="31" id="GK8-2g-6cW"/>
+                            <constraint firstItem="YAB-xN-dzP" firstAttribute="centerX" secondItem="AW9-Xg-tLj" secondAttribute="centerX" id="P9o-7A-pxS"/>
+                            <constraint firstItem="YAB-xN-dzP" firstAttribute="centerY" secondItem="AW9-Xg-tLj" secondAttribute="centerY" id="VFg-jM-ahJ"/>
                             <constraint firstItem="RT0-gP-3j5" firstAttribute="leading" secondItem="aFk-ch-c4t" secondAttribute="leading" constant="46" id="ZEq-A1-h3a"/>
                             <constraint firstItem="i3p-Bf-pKF" firstAttribute="top" secondItem="aFk-ch-c4t" secondAttribute="top" constant="30" id="a0i-jp-2sl"/>
                             <constraint firstItem="i3p-Bf-pKF" firstAttribute="leading" secondItem="aFk-ch-c4t" secondAttribute="leading" constant="52" id="bCE-T9-a5q"/>
+                            <constraint firstItem="Myx-AD-m3S" firstAttribute="centerX" secondItem="AW9-Xg-tLj" secondAttribute="centerX" id="dE4-Jq-sVp"/>
                             <constraint firstItem="aFk-ch-c4t" firstAttribute="bottom" secondItem="Q5K-8K-S2Z" secondAttribute="bottom" constant="56" id="eQV-MY-jBf"/>
                             <constraint firstItem="aFk-ch-c4t" firstAttribute="trailing" secondItem="RT0-gP-3j5" secondAttribute="trailing" constant="61" id="igZ-Pu-Q4d"/>
                             <constraint firstItem="RT0-gP-3j5" firstAttribute="top" secondItem="i3p-Bf-pKF" secondAttribute="bottom" constant="32" id="nTJ-ic-2fE"/>
+                            <constraint firstItem="Myx-AD-m3S" firstAttribute="centerY" secondItem="AW9-Xg-tLj" secondAttribute="centerY" id="q1g-EZ-3g7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aFk-ch-c4t"/>
                     </view>
@@ -136,4 +146,8 @@
             <point key="canvasLocation" x="855.20000000000005" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="correct" width="202" height="202"/>
+        <image name="incorrect" width="201" height="201"/>
+    </resources>
 </document>
