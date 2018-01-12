@@ -79,5 +79,32 @@ class QuestionDataManager {
             print("CSVなし")
             return
         }
+        //CSVファイルの読み込み
+        do {
+            let csvStringData = try String(contentsOfFile:csvFilePath, encoding: String.Encoding.utf8)
+            
+            //CSVのデータを1行ずつ読み込む
+            csvStringData.enumerateLines(invoking: { (line, stop) in
+                //カンマ区切りで分割
+                let questionSourceDataArray = line.components(separatedBy: ",")
+                //問題データを格納するオブジェクトを作成
+                let questionData = QuestionData(questionSourceDataArray: questionSourceDataArray)
+                //問題を追加
+                self.questionDataArray.append(questionData)
+                //問題番号を追加
+                questionData.questuionNo = self.questionDataArray.count
+                
+            })
+        } catch let error {
+            print("CSV読み込みエラーが発生しました\(error)")
+        }
+        
     }
 }
+
+
+
+
+
+
+
