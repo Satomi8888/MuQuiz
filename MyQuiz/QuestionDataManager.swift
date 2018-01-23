@@ -26,7 +26,7 @@ class QuestionData {
     var userChoiseAnswerNo:Int?
     
     //問題の番号
-    var questuionNo:Int = 0
+    var questionNo:Int = 0
     
     //クラスが生成された時の処理
     init(questionSourceDataArray:[String]) {
@@ -92,22 +92,21 @@ class QuestionDataManager {
                 //問題を追加
                 self.questionDataArray.append(questionData)
                 //問題番号を追加
-                questionData.questuionNo = self.questionDataArray.count
+                questionData.questionNo = self.questionDataArray.count
                 
             })
         } catch let error {
             print("CSV読み込みエラーが発生しました\(error)")
         }
-        //次の問題を取り出す
-        func nextQuestion() -> QuestionData?{
-            if nowQuestionIndex < questionDataArray.count {
-                let nextQuestion = questionDataArray[nowQuestionIndex]
-                nowQuestionIndex += 1
-                return nextQuestion
-            }
-            return nil
+    }
+    //次の問題を取り出す
+    func nextQuestion() -> QuestionData?{
+        if nowQuestionIndex < questionDataArray.count {
+            let nextQuestion = questionDataArray[nowQuestionIndex]
+            nowQuestionIndex += 1
+            return nextQuestion
         }
-        
+        return nil
     }
 }
 

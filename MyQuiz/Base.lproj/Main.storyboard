@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="LvU-xL-1dZ">
             <objects>
-                <viewController storyboardIdentifier="Question" id="7PR-5p-uut" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Question" id="7PR-5p-uut" customClass="QuestionViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AW9-Xg-tLj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,6 +143,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aFk-ch-c4t"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1Button" destination="NhL-pF-TjF" id="lCb-ax-WT3"/>
+                        <outlet property="answer2Button" destination="WwH-ZG-ehh" id="rbd-Qc-SoB"/>
+                        <outlet property="answer3Button" destination="Zen-Mq-O1q" id="hmr-Sw-d3W"/>
+                        <outlet property="answer4Button" destination="EKm-xw-aBv" id="7uM-xg-SuZ"/>
+                        <outlet property="correctImageView" destination="Myx-AD-m3S" id="N2x-HV-oFZ"/>
+                        <outlet property="incoeewctImageView" destination="YAB-xN-dzP" id="8mL-ir-fjw"/>
+                        <outlet property="questionNoLabel" destination="i3p-Bf-pKF" id="z2Z-dp-EDq"/>
+                        <outlet property="questionTextView" destination="RT0-gP-3j5" id="tF8-oV-Xil"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="euk-7I-Dsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
