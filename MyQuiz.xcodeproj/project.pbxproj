@@ -15,6 +15,7 @@
 		AB6A69881FFF936900768B03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6A69861FFF936900768B03 /* LaunchScreen.storyboard */; };
 		AB6A69902004749300768B03 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = AB6A698F2004749200768B03 /* question.csv */; };
 		AB6A69922005BD3D00768B03 /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6A69912005BD3D00768B03 /* QuestionDataManager.swift */; };
+		ABE7A0F7201ADA9F0052DE4B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE7A0F6201ADA9E0052DE4B /* AudioToolbox.framework */; };
 		ABF087D2200DAC9D00E41D1D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF087D1200DAC9D00E41D1D /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		AB6A69891FFF936900768B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB6A698F2004749200768B03 /* question.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
 		AB6A69912005BD3D00768B03 /* QuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
+		ABE7A0F6201ADA9E0052DE4B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		ABF087D1200DAC9D00E41D1D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE7A0F7201ADA9F0052DE4B /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +51,7 @@
 			children = (
 				AB6A697C1FFF936900768B03 /* MyQuiz */,
 				AB6A697B1FFF936900768B03 /* Products */,
+				ABE7A0F5201ADA9E0052DE4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +78,14 @@
 				AB6A69891FFF936900768B03 /* Info.plist */,
 			);
 			path = MyQuiz;
+			sourceTree = "<group>";
+		};
+		ABE7A0F5201ADA9E0052DE4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7A0F6201ADA9E0052DE4B /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

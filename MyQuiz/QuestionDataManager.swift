@@ -23,7 +23,7 @@ class QuestionData {
     var correctAnswerNumber:Int
     
     //ユーザが選択した番号
-    var userChoiseAnswerNo:Int?
+    var userChoiseAnswerNumber:Int?
     
     //問題の番号
     var questionNo:Int = 0
@@ -40,7 +40,7 @@ class QuestionData {
     //ユーザが選択した答えが正解かどうか判定する
     func isCorrect() -> Bool {
         //答えが一致しているかどうか判定する
-        if correctAnswerNumber == userChoiseAnswerNo {
+        if correctAnswerNumber == userChoiseAnswerNumber {
             //正解
             return true
         }

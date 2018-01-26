@@ -91,6 +91,9 @@
                                         <state key="normal" title="パイナップル">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer1Button:" destination="7PR-5p-uut" eventType="touchUpInside" id="pwp-OF-tcx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwH-ZG-ehh">
                                         <rect key="frame" x="0.0" y="97.5" width="306" height="88"/>
@@ -99,6 +102,9 @@
                                         <state key="normal" title="いちご">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer2Button:" destination="7PR-5p-uut" eventType="touchUpInside" id="FFC-LW-DEG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zen-Mq-O1q">
                                         <rect key="frame" x="0.0" y="195.5" width="306" height="87.5"/>
@@ -107,6 +113,9 @@
                                         <state key="normal" title="もも">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer3Button:" destination="7PR-5p-uut" eventType="touchUpInside" id="bPI-Pq-ck0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKm-xw-aBv">
                                         <rect key="frame" x="0.0" y="293" width="306" height="87.5"/>
@@ -115,6 +124,9 @@
                                         <state key="normal" title="オレンジ">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer4Button:" destination="7PR-5p-uut" eventType="touchUpInside" id="3Ji-qe-NtZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
