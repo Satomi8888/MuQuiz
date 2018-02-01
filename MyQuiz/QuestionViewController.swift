@@ -23,7 +23,8 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var answer4Button: UIButton!
     
     @IBOutlet weak var correctImageView: UIImageView!
-    @IBOutlet weak var incoeewctImageView: UIImageView!
+    @IBOutlet weak var incorrectImageView: UIImageView!
+    
     
     //初期データ設定処理、前画面で設定済みのquestionDataから値を取り出す
     override func viewDidLoad() {
@@ -61,8 +62,10 @@ class QuestionViewController: UIViewController {
         //正解しているか判定
         if questionData.isCorrect() {
             //正解のアニメーションを再生しながら次の問題へ遷移する
+            goNextQuestionWithCorrectAnimation()
         } else {
-            //正解のアニメーションを再生しながら次の問題へ遷移する
+            //不正解のアニメーションを再生しながら次の問題へ遷移する
+            goNextQuestionWithIncorrectAnimation()
         }
     }
     
@@ -71,19 +74,56 @@ class QuestionViewController: UIViewController {
         //正解を伝える音を鳴らす
         AudioServicesPlayAlertSound(1025)
         
-        //アニメーション}
+        //アニメーション
         UIView.animate(withDuration: 2.0, animations: {
             //アルファ値を1.0に変化させる（初期値はStoryBoardで0.0に設定済み）
             self.correctImageView.alpha = 1.0
         }) {(Bool) in
            //アニメーション完了後に次の問題へ進む
+            self.goNextQuestion()
         }
     }
+
+    //次の問題に不正解のアニメーション付きで遷移する
+    func goNextQuestionWithIncorrectAnimation() {
+    //不正解を伝える音を鳴らす
+        AudioServicesPlayAlertSound(1006)
+        
+        //アニメーション
+        UIView.animate(withDuration: 2.0, animations: {
+            //アルファ値を1.0に変化させる（初期値はStoryBoardで0.0に設定済み）
+            self.incorrectImageView.alpha = 1.0
+        }) { (Bool) in
+        //アニメーション完了後に次の問題へ進む
+        self.goNextQuestion()
+        }
+    }
+    
+    //次の問題へ遷移する
+    func goNextQuestion() {
+        //次の問題文の取り出し
+        guard let nextQuestion = QuestionDataManager.sharedInstance.nextQuestion()  else {
+            //問題がなければ結果画面へ遷移する
+            //StoryboardのIdentifierい設定した値（result）を指定して
+            //ViewControllerを生成する
+            if let resultViewController = storyboard?.instantiateViewController(withIdentifier: "result") as? ResultViewController {
+                //Storyboardのsegueを利用しない明示的な画面遷移処理
+                present(resultViewController, animated: true, completion: nil)
+            }
+            return
+        }
+        //問題文がある場合は次の問題に遷移する
+        //StoryboardのIdentifierい設定した値（question）を指定して
+        //ViewControllerを生成する
+        if let nextQuestionViewController = storyboard?.instantiateViewController(withIdentifier: "question") as? QuestionViewController {
+            nextQuestionViewController.questionData = nextQuestion
+            present(nextQuestionViewController, animated: true, completion: nil)
+        }
+
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-
-
 }

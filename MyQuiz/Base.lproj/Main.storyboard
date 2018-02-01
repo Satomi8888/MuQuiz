@@ -161,7 +161,7 @@
                         <outlet property="answer3Button" destination="Zen-Mq-O1q" id="hmr-Sw-d3W"/>
                         <outlet property="answer4Button" destination="EKm-xw-aBv" id="7uM-xg-SuZ"/>
                         <outlet property="correctImageView" destination="Myx-AD-m3S" id="N2x-HV-oFZ"/>
-                        <outlet property="incoeewctImageView" destination="YAB-xN-dzP" id="8mL-ir-fjw"/>
+                        <outlet property="incorrectImageView" destination="YAB-xN-dzP" id="Snl-k7-b2S"/>
                         <outlet property="questionNoLabel" destination="i3p-Bf-pKF" id="z2Z-dp-EDq"/>
                         <outlet property="questionTextView" destination="RT0-gP-3j5" id="tF8-oV-Xil"/>
                     </connections>
@@ -170,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="855.20000000000005" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="Ob9-Pz-jmC">
             <objects>
-                <viewController storyboardIdentifier="Result" id="b5V-xU-lLA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Result" id="b5V-xU-lLA" customClass="ResultViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yfc-MB-bRT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,6 +222,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lSJ-ap-j6j"/>
                     </view>
+                    <connections>
+                        <outlet property="correctPersentLabel" destination="fRj-oq-xbq" id="zSO-4Q-4RM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOP-iU-RTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
