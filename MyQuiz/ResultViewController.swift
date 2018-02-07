@@ -31,7 +31,7 @@ class ResultViewController: UIViewController {
         //正解率を計算する
         let correctParsent:Float = (Float(correctCount) / Float(questionCount)) * 100
         
-        correctPersentLabel.text = String(format:"%.lf", correctParsent) + "%"
+        correctPersentLabel.text = String(format:"%.1f", correctParsent) + "%"
     }
 
     override func didReceiveMemoryWarning() {

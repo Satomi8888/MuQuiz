@@ -187,6 +187,9 @@
                                 <state key="normal" title="タイトルへ戻る">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="eIP-8t-Po9" kind="unwind" unwindAction="goToTitle:" id="igC-av-JbS"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gkU-3G-JBM">
                                 <rect key="frame" x="94" y="184" width="161" height="204"/>
@@ -227,6 +230,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wOP-iU-RTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="eIP-8t-Po9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1548" y="132.68365817091455"/>
         </scene>
